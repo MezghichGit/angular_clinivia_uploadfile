@@ -1,0 +1,14 @@
+<p>list-doctors works!</p>
+
+<table border="1" align="center">
+  <tr>
+  <th>First Name</th><th>Last Name</th> <th>Phone</th><th>Gender</th><th>Photo</th>
+</tr>
+  <tr *ngFor="let doctor of doctors">
+      <td>{{doctor.firstName}}</td>
+      <td>{{doctor.lastName}}</td>
+      <td>{{doctor.mobile}}</td>
+      <td>{{doctor.gender}}</td>
+      <td><a href="http://localhost:5126/{{doctor.photoPath}}"> Télécharger </a></td>
+  </tr>
+</table>
