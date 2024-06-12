@@ -11,4 +11,9 @@ export class DoctorService {
   getAllDoctors(){
     return this.http.get("http://localhost:5126/api/Docteurs");
   }
+
+  createDoctor(formData:any) {
+    return this.http.post("http://localhost:5126/api/Docteurs", formData);
+  }
+
 }

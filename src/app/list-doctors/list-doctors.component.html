@@ -9,6 +9,9 @@
       <td>{{doctor.lastName}}</td>
       <td>{{doctor.mobile}}</td>
       <td>{{doctor.gender}}</td>
-      <td><a href="http://localhost:5126/{{doctor.photoPath}}"> Télécharger </a></td>
+      <td>
+        <img src="http://localhost:5126/{{doctor.photoPath}}" width="20%"/>
+        <a href="http://localhost:5126/{{doctor.photoPath}}" target="_blank"> Télécharger </a>
+      </td>
   </tr>
 </table>
